@@ -1,0 +1,42 @@
+.car-section{
+    margin: 5rem 0 0;
+}
+.car-section .row{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.car-section{
+    padding: 1rem 0;
+}
+.car-section .main-title p{
+    font-family: var(--cursive-font);
+    font-size: 40px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.car-section .section-divider{
+    text-align: center;
+}
+.car-section .section-divider img{
+    width: 180px;
+}
+.car-card img{
+    height: 13rem;
+}
+.car-card a{
+    color: var(--text-black);
+}
+.car-card a:hover{
+   text-decoration: none;
+   color: var(--main-color);
+}
+.car-section .row .card-footer{
+    background-color: var(--main-color);
+    color: var(--text-white);
+}
+div.container{
+    border-bottom: 1px dashed var(--main-color);
+    margin-bottom: 1rem;
+}

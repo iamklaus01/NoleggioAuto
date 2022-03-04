@@ -1,0 +1,245 @@
+
+/* ===== Hero-section styles ===== */
+#hero{
+    margin: 0;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)) , url("../images/hero-image-3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.hero {
+    height: 100vh;
+    position: relative;
+}
+.hero-container{
+    padding: 15% 10%;
+    color: var(--text-white);
+}
+.title,
+.description {
+    margin-bottom: 4%;
+}
+.title h1{
+    font-family: var(--cursive-font);
+}
+.first-name{
+    color: var(--main-color);
+}
+.description p{
+    text-align: justify;
+    font-size: 20px;
+    letter-spacing: 1.1pt;
+}
+.description .slogan{
+    font-family: var(--cursive-font);
+    margin-top: 2%;
+}
+.btn-start .hero-btn{
+    text-transform: uppercase;
+    width: 200px;
+    padding: 15px 10px;
+    border: 2px solid var(--main-color);
+    border-radius: 2px;
+    background: transparent;
+    font-weight: 600;
+    transition:400ms ease-in-out;
+}
+.btn-start .hero-btn a{
+    text-decoration: none;
+    color: white;
+}  
+.btn-start .hero-btn:hover {
+    cursor: pointer;
+    background: var(--main-color);
+    border: none;
+}
+.btn-start .hero-btn a:hover{
+    text-decoration: none;
+}  
+
+@media  screen and (max-width: 820px) {
+    .hero-container{
+        padding: 50% 10%;
+    }
+}
+/* ===== Why us styles ===== */
+.reason-container{
+    margin-top: 5rem;
+}
+.section-title{
+    width: fit-content;
+    margin: auto;
+}
+.section-title h2{
+    font-family: var(--cursive-font);
+    color: var(--main-color);
+    text-align: center;
+    padding: 4px 0;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+.reason-container .row{
+    margin: 5rem 0 0;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(49, 140, 231,.5), rgba(49,140,231,.5)) , url("../images/why-choose-us-feature.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.reason-container .item {
+    width: 400px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
+}
+.item .img-container{
+    display: flex;
+    justify-content: center;
+}
+.item .img-circle{
+    width: 64px;
+    margin: 10px 0;
+}
+.item .item-title{
+    display: block;
+    font-family: var(--cursive-font);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+}   
+.item p {
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: 400;
+}
+@media  screen and (max-width: 416px) {
+    .reason-container .item{
+        margin-bottom: 1rem;
+    }
+}
+
+/* ===== Inventory section styles ===== */
+
+.our-cars{
+    margin-top: 5rem ;
+}
+.our-cars .row{
+    padding: 3rem 0;
+    margin: 5rem 0 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: rgba(61, 159, 255, 0.1);
+}
+.car-card{
+    margin-bottom: 2rem;
+}
+.car-card img{
+    height: 12rem;
+}
+.car-card a{
+    color: var(--text-black);
+}
+.car-card a:hover{
+   text-decoration: none;
+   color: var(--main-color);
+}
+.our-cars .row .card-footer{
+    background-color: var(--secondary-color);
+    color: var(--text-white);
+}
+
+/*See more button */
+.see-more-button{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin: 1rem 0 2rem;
+}
+.more {
+    text-align: center;
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: -5px -5px 10px var(--main-color),  5px 5px 10px #BABECC;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.more a.see-more{
+    color: var(--text-black);
+    text-decoration: none;
+}
+.more a.see-more:hover{
+    color: var(--text-black);
+    text-decoration: none;
+}
+.more:hover {
+    box-shadow: -2px -2px 5px white, 2px 2px 5px #BABECC;
+}
+.more:active {
+    box-shadow: inset 2px 2px 2px #BABECC, inset -2px -2px 2px white;
+}
+
+/* ===== Newsletter ===== */
+.newsletter{
+    background-image: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)) , url("../images//1179580.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 30px 0;
+}
+.box {
+    background-color: #fff;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    max-width: 500px;
+}
+.box h2{
+    font-family: var(--cursive-font);
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+.box .form-control {
+    margin: 2rem 0;
+    position: relative;
+    border: 0;
+}
+.input {
+    display: block;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    height: 42px;
+    padding: 12px 25px;
+    width: 100%;
+}
+.btn-newsletter {
+    background-color: #212529;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    height: 40px;
+    padding: 9px 25px;
+    position: absolute;
+    top: 9px;
+    right: 0;
+}
+.btn-newsletter:hover{
+    background-color: var(--main-color);
+}
+.input:focus, .btn:focus {
+    outline: 0;
+}
+

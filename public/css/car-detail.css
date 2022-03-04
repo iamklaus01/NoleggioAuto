@@ -1,0 +1,44 @@
+.detail-body{
+    margin: 6rem 0 0;
+}
+.container {
+    background: #fff;
+    border: none;
+}
+.r3 li {
+    list-style: none;
+    line-height: 50px;
+}
+span.description{
+    margin: 0.5rem 0 0;
+    padding-left: 1rem;
+    font-family: var(--cursive-font);
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+.footer-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 0 0;
+}
+.col-md-2 a,
+.col-md-2 a:hover {
+    text-decoration: none;
+    color: var(--text-white)
+}
+.separator{
+    border-bottom: 1px dashed var(--main-color);
+}
+@media screen and (max-width: 620px) {
+    .container {
+        display: flex;
+        flex-flow: column;
+        text-align: center
+    }
+    .klo {
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        margin-right: 40px
+    }
+}
