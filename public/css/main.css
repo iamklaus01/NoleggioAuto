@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Poppins:wght@200;400&display=swap');
+
+/*===== GENERAL STYLES =====*/
+:root {
+    --main-color: #318ce7;
+    --main-color-dark: #086bce;
+    --dark-blue:#252c6a;
+    --secondary-color: #dfb860;
+    --sky-blue: #caf0f8;
+    --text-black: #212529;
+    --text-white: #ffffff;
+    --default-font: "Poppins" , sans-serif;
+    --cursive-font: "Playball" , cursive;
+}
+
+body {
+    font-family:var(--default-font);
+    color: var(--text-black);
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+a,
+button,
+a:hover,
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    text-decoration: none;
+    outline: none;
+}
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+/* ===== Navbar Styles =====*/
+.navbar{
+    width: 100%;
+}
+.navbar.bg-navbar{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 4px 0px rgba(49,140,231,0.75);
+-webkit-box-shadow: 0px 5px 4px 0px rgba(49,140,231,0.75);
+-moz-box-shadow: 0px 5px 4px 0px rgba(49,140,231,0.75);
+}
+.navbar-brand img{
+    width: 120px;
+    height: auto;
+}
+li.active a.nav-link{
+    color: var(--main-color);
+}
+a.nav-link{
+    display: inline-block;
+    color: var(--text-black);
+    font-size: 18px;
+    font-weight: 500;
+
+}
+a.nav-link:hover{
+    color: var(--main-color);
+    transform: scale(1.04);
+}
+h3.no-record{
+    font-family:var(--cursive-font);
+    margin-top: 5rem;
+    padding: 1rem;
+    text-align: center;
+    color: #212529;
+}
+
+/* ======Footer styles ===== */
+
+.footer-distributed{
+    padding: 1rem 0 !important;
+    text-align: center;
+}
+.footer-distributed .row{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	margin: 20px 0;
+}
+.footer-distributed .footer-links a{
+    color:  var(--text-black);
+	display:inline-block;
+    font-weight:400;
+	text-decoration: none;
+}
+.footer-distributed .footer-links a:hover{
+	color: var(--main-color);
+	text-decoration: none;
+}
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 18px;
+  left: 0;
+  display: inline-block;
+  padding-right: 1rem;
+}
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-title h3{
+    font-family: var(--cursive-font);
+}
+.footer-title .first-name{
+    color: var(--main-color);
+}
+/* Footer Center */
+
+.footer-distributed .footer-center{
+    font-size: 16px;
+}
+.footer-distributed .footer-center div{
+    text-align: left;
+}
+.footer-distributed .footer-center span{
+    color: var(--secondary-color);
+	font-size: 24px;
+	margin: 1rem;
+	vertical-align: middle;
+}
+.footer-distributed .footer-center span.fa-envelope{
+    font-size: 20px;
+}
+.footer-distributed .footer-center p{
+	display: inline-block;
+    font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+.footer-distributed .footer-center p a{
+	color:  var(--main-color);
+	text-decoration: none;;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  var(--text-black);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  var(--secondary-color);
+    font-family: var(--cursive-font);
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	margin-right: 0.5rem;
+	margin-bottom: 1rem;
+	font-size: 20px;
+    color: var(--text-black);
+	text-align: center;
+	cursor: pointer;
+}
+.footer-distributed .footer-icons a:hover{
+	color: var(--main-color);
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font-size:16px;
+	}
+}
+
+.copyright{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    box-shadow: 0px -5px 5px 0px rgba(49,140,231,0.75);
+    -webkit-box-shadow: 0px -5px 5px 0px rgba(49,140,231,0.75);
+    -moz-box-shadow: 0px -5px 5px 0px rgba(49,140,231,0.75);
+}
+.copyright span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
