@@ -39,7 +39,7 @@
             <input class="form-control-file" type="file" accept="image/*" name="carImage" id="carImage" value="" required onchange="displayFile(event)">
             </div>
             <div class="imagePreview">
-                <img src="{{ asset('storage/'.$car->image_path) }}" id="uploadImage" alt="Uploaded car's picture" srcset="">
+                <img src="{{ secure_asset('storage/'.$car->image_path) }}" id="uploadImage" alt="Uploaded car's picture" srcset="">
             </div>
             <div class="button-container d-flex justify-content-end">
                 <button type="submit" class="btn btn-success">Modifier</button>

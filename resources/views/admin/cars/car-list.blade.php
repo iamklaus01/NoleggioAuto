@@ -30,7 +30,7 @@
                                 <tr>
                                     <th scope="row">{{ $car->id }}</th>
                                     <td>
-                                        <img src="{{ asset('storage/'.$car->image_path) }}" class="img-fluid img-thumbnail" alt="Sheep">
+                                        <img src="{{ secure_asset('storage/'.$car->image_path) }}" class="img-fluid img-thumbnail" alt="Sheep">
                                     </td>
                                     <td>{{ $car->brand.'  '.$car->model }}</td>
                                     <td>{{ $car->description }}</td>

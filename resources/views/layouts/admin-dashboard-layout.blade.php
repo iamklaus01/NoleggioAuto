@@ -6,11 +6,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
         <meta name="msapplication-tap-highlight" content="no">
-        <link rel="stylesheet" href="{{ asset('css/dashboard-index.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/dashboard-index.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('vendor/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('font-awesome-4.7.0/css/font-awesome.min.css') }}">
-        <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/x-icon">
+        <link rel="stylesheet" href="{{ secure_asset('css/dashboard-index.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/dashboard-index.min.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('vendor/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('font-awesome-4.7.0/css/font-awesome.min.css') }}">
+        <link rel="shortcut icon" href="{{ secure_asset('images/favicon.png') }}" type="image/x-icon">
         <title>{{ config('app.name', 'Noleggio Auto') }}</title>
     </head>
     <body>
@@ -167,9 +167,9 @@
                 </div>
             </div>
         </div>
-        <script src="{{ asset('vendor/jquery-3.3.0.min.js') }}"></script>
-        <script src="{{ asset('vendor/bootstrap.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('js/dashboard-index.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('js/dashboard-index.min.js') }}"></script>
+        <script src="{{ secure_asset('vendor/jquery-3.3.0.min.js') }}"></script>
+        <script src="{{ secure_asset('vendor/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{ secure_asset('js/dashboard-index.js') }}"></script>
+        <script type="text/javascript" src="{{ secure_asset('js/dashboard-index.min.js') }}"></script>
     </body>
 </html>
