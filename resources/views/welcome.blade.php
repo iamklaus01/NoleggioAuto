@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="{{ secure_asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('vendor/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('font-awesome-4.7.0/css/font-awesome.min.css') }}">
     <link rel="shortcut icon" href="{{ secure_asset('images/favicon.png') }}" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/47280fe899.js" crossorigin="anonymous"></script>
     <title>{{ config('app.name', 'Noleggio Auto') }}</title>
 </head>
 <body>
