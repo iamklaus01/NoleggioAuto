@@ -38,7 +38,11 @@
             <input class="form-control-file" type="file" accept="image/*" name="carImage" id="carImage" required onchange="displayFile(event)">
             </div>
             <div class="imagePreview">
+<<<<<<< HEAD
                 <img src="{{ secure_asset('images/upload.png') }}" id="uploadImage" alt="Uploaded car's picture" srcset="">
+=======
+                <img src="{{ asset('images/upload.png') }}" id="uploadImage" alt="Uploaded car's picture" srcset="">
+>>>>>>> d60d68d85b8d5cd769d2864b20d8c69fd4f9ffd4
             </div>
             <div class="button-container d-flex justify-content-end">
                 <button type="submit" class="btn btn-success mb-5">Ajouter</button>

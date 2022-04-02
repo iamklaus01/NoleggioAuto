@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="{{ secure_asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('css/location.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('vendor/bootstrap.min.css') }}">
     <link rel="shortcut icon" href="{{ secure_asset('images/favicon.png') }}" type="image/x-icon">
     <script src="https://kit.fontawesome.com/47280fe899.js" crossorigin="anonymous"></script>
+=======
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/location.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendor/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('font-awesome-4.7.0/css/font-awesome.min.css') }}">
+    <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/x-icon">
+>>>>>>> d60d68d85b8d5cd769d2864b20d8c69fd4f9ffd4
     <title>{{ config('app.name', 'Noleggio Auto') }}</title>
 </head>
 <body>
@@ -16,7 +24,11 @@
     <header id="header">
         <nav class="navbar navbar-expand-lg fixed-top bg-navbar">
             <div class="container-fluid">
+<<<<<<< HEAD
                 <a class="navbar-brand" href="#"><img src="{{ secure_asset('images/logo.svg') }}" alt="Logo Noleggio Auto"></a>
+=======
+                <a class="navbar-brand" href="#"><img src="{{ asset('images/logo.svg') }}" alt="Logo Noleggio Auto"></a>
+>>>>>>> d60d68d85b8d5cd769d2864b20d8c69fd4f9ffd4
                 <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
                     <span class="fa fa-bars"></span>
                 </button>
@@ -45,14 +57,22 @@
         <div class="main-title">
             <p>Découvrez notre parc de voitures</p>
             <div class="section-divider">
+<<<<<<< HEAD
                 <img src="{{ secure_asset('images/section-divider.svg') }}" alt="Section Divider">
+=======
+                <img src="{{ asset('images/section-divider.svg') }}" alt="Section Divider">
+>>>>>>> d60d68d85b8d5cd769d2864b20d8c69fd4f9ffd4
             </div>
         </div>
         <div class="row col-sm-12">
             @forelse ($cars as $car)
                 <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
                     <div class="card car-card">
+<<<<<<< HEAD
                         <img src="{{ secure_asset('storage/'.$car->image_path) }}" alt="Car picture" class="card-img-top car-img">
+=======
+                        <img src="{{ asset('storage/'.$car->image_path) }}" alt="Car picture" class="card-img-top car-img">
+>>>>>>> d60d68d85b8d5cd769d2864b20d8c69fd4f9ffd4
                         <div class="card-body">
                             <a href="{{ route('single-car' , ['id' => $car->id]) }}">
                                 <div class="car-info d-flex justify-content-between text-uppercase">
@@ -123,7 +143,12 @@
             <span><small>&copy; Noleggio Auto. All Rights Reserved.</small></span>
         </div>
     </footer>
+<<<<<<< HEAD
       <script src="{{ secure_asset('vendor/jquery-3.3.0.min.js') }}"></script>
       <script src="{{ secure_asset('vendor/bootstrap.bundle.min.js') }}"></script>
+=======
+      <script src="{{ asset('vendor/jquery-3.3.0.min.js') }}"></script>
+      <script src="{{ asset('vendor/bootstrap.bundle.min.js') }}"></script>
+>>>>>>> d60d68d85b8d5cd769d2864b20d8c69fd4f9ffd4
 </body>
 </html>
